@@ -5,7 +5,7 @@ newcompList = random.choice(compList)
 print 'Comp choice:', newcompList
 #here you put your choice
 inp = raw_input ('Choose R for "Rock", S for "Scissors", or P for "Paper" ')
-print 'Your choose is:', inp
+print 'Your choice is:', inp
 #here the if loop
 if inp == newcompList:
     print 'Tie'
