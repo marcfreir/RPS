@@ -1,37 +1,52 @@
-## Welcome to GitHub Pages
+## RPS Game in Python (adapted v3+)
 
-You can use the [editor on GitHub](https://github.com/marcfreir/RPS/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+* Link: [RPS](https://github.com/marcfreir/RPS/blob/master/Rock%20Paper%20Scissors%20Game%20v2.py)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+###### Code Preview
 
-### Markdown
+```python
+import random
+compList = ['R', 'P', 'S']
+#here the computer random the list
+newcompList = random.choice(compList)
+print ('Comp choice:', newcompList)
+#here you put your choice
+inp = raw_input ('Choose R for "Rock", S for "Scissors", or P for "Paper" ')
+print ('Your choice is:', inp)
+#here the if loop
+if inp == newcompList:
+    print ('Tie')
+    
+elif inp == 'R' and newcompList == 'S':
+    print ('You win!')
+    
+elif inp == 'R' and newcompList == 'P':
+    print ('You lose!')
+    
+elif inp == 'S' and newcompList == 'R':
+    print ('You lose!')
+    
+elif inp == 'S' and newcompList == 'P':
+    print ('You win!')
+    
+elif inp == 'P' and newcompList == 'R':
+    print ('You win!')
+    
+elif inp == 'P' and newcompList == 'S':
+    print ('You lose!')
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+else:
+    print ('===========')
+    print (' Wrong!(}:/')
+    print ('===========')
+#here a messenge to finish the game    
+print ('==========')
+print ('Game over!')
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
+###### Created on Aug 27, 2016
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+##### Any question, please ask me: marcfreir@yandex.com £:)
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/marcfreir/RPS/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### License
+[MIT](https://github.com/marcfreir/Bootcamp-Fullstack/blob/master/LICENSE)
